@@ -6,11 +6,13 @@ app.use('/', (req, res) => {
     res.send("Hello, world!");
 });
 
-<<<<<<< 
+
 This is dimple's change HEAD
-=======
+
 const vatsal = "Vatsal Changes";
->>>>>>> 5b7aec87069dc9d2cc18757b9f5ab1c849d21ae2
+
+Dimple adding second change to the code 
+
 
 app.listen(PORT, () => {
     console.log("Server is running at http://localhost:" + PORT);

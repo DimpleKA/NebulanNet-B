@@ -1,17 +1,18 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const connectDB = require("./config/db");
+require('dotenv').config();
 
-app.use('/', (req, res) => {
+connectDB();
+
+app.use(cors())
+
+app.use('/api/test', (req, res) => {
+
     res.send("Hello, world!");
 });
-
-
-This is dimple's change HEAD
-
-const vatsal = "Vatsal Changes";
-
-
 
 
 app.listen(PORT, () => {

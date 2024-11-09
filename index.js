@@ -6,6 +6,8 @@ app.use('/', (req, res) => {
     res.send("Hello, world!");
 });
 
+const vatsal = "Vatsal Changes";
+
 app.listen(PORT, () => {
     console.log("Server is running at http://localhost:" + PORT);
 });
